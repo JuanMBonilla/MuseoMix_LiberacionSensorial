@@ -1,0 +1,323 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Oficina\Desktop\museomix\museomix\oscSendPostura.v4p" scrollx="0" scrolly="360" systemname="oscSendPostura" filename="C:\Users\Oficina\Desktop\museomix\museomix\oscSendPostura.v4p" locked="0">
+   <BOUNDS type="Window" left="9345" top="13515" width="14460" height="9105">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="14" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="5760" top="7335" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="9135" top="7740" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="5760" top="7335" type="Box" width="570">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="12000">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="99999">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="13" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="5175" top="7185" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="9195" top="6930" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="375" left="5175" top="7185" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="12" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="0" left="5400" top="2400" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="4980" top="6225" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="285" left="5400" top="2400" type="Box" width="405">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="i">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="11" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="255" left="5760" top="2355" type="Node" width="1005">
+   </BOUNDS>
+   <BOUNDS height="1155" left="5760" top="2355" type="Box" width="3195">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|The Typetag states, what type of data is sent&cr;&lf;supported typetags:&cr;&lf;s = string&cr;&lf;f = float&cr;&lf;i = integer|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="10" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="3885" top="3330" type="Node" width="1035">
+   </BOUNDS>
+   <BOUNDS height="270" left="3885" top="3330" type="Box" width="1035">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|osc address:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="9" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="6345" top="7305" type="Node" width="780">
+   </BOUNDS>
+   <BOUNDS height="270" left="6345" top="7305" type="Box" width="780">
+   </BOUNDS>
+   <BOUNDS height="160" left="0" top="0" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|udp port|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="255" left="3915" top="6300" type="Node" width="1035">
+   </BOUNDS>
+   <BOUNDS height="285" left="3915" top="6300" type="Box" width="4020">
+   </BOUNDS>
+   <BOUNDS height="160" left="-120" top="915" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|the osc-encoded message represented as string|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" hiddenwhenlocked="0" id="7" nodename="IOBox (String)" systemname="IOBox (String)">
+   <PIN pinname="Input String" visible="1" slicecount="1" encoded="1" values="I2J1bmRsZQAAAAAAAAAAAQAAACQvdGlja3RhY2sAAAAscwAAMjAxMy4wMS4wNy0wMi40MC4zMwA=">
+   </PIN>
+   <BOUNDS height="0" left="3810" top="6615" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="13800" top="17130" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="330" left="3810" top="6615" type="Box" width="6300">
+   </BOUNDS>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="5715" top="3810" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="7650" top="4020" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="435" left="5715" top="3810" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6045" top="3675" width="5400" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6045" top="3675" width="1695" height="1365">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="215" height="160">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|check to send as bundle (recommended)&cr;&lf;only use no bundles if the receiving application does not understand them|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="4" nodename="UDP (Network Client)" systemname="UDP (Network Client)">
+   <BOUNDS height="0" left="5070" top="7785" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Do Send" visible="1">
+   </PIN>
+   <PIN pinname="Remote Port" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Remote Host" slicecount="1" visible="1" values="localhost">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="4" dstpinname="Remote Port" linkstyle="PolyLine" srcnodeid="14" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="4" dstpinname="Do Send" linkstyle="PolyLine" srcnodeid="13" srcpinname="Y Output Value">
+   </LINK>
+   <NODE id="3" nodename="OSCEncoder (Network)" systemname="OSCEncoder (Network)">
+   <BOUNDS height="0" left="5070" top="5160" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Arguments" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Type Tags" visible="1">
+   </PIN>
+   <PIN pinname="Address" visible="1" slicecount="1" values="0.0000">
+   </PIN>
+   <PIN pinname="OSCMessage" visible="1">
+   </PIN>
+   <PIN pinname="Spread as Bundle" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="3" dstpinname="Type Tags" srcnodeid="12" srcpinname="Output String">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Spread as Bundle">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="OSCMessage" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="3810" top="5805" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Encoding" slicecount="1" values="us-ascii">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="OSCMessage" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="7" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7245" top="7560" width="2595" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7245" top="7560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="169.254.191.176">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="192.168.1.1">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="IP">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="4" dstpinname="Remote Host">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3075" top="5310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="OnChange" dstnodeid="13" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="9915" top="1185" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9915" top="1185" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="11250" top="3165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="3" dstpinname="Arguments">
+   </LINK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="4620" top="1230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4320" top="345" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4320" top="345" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="21">
+   <BOUNDS type="Node" left="1965" top="1635" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1965" top="1635" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Address">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="3" dstpinname="Address">
+   </LINK>
+   <NODE componentmode="InABox" id="23" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="0" left="5790" top="1320" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="24795" top="7545" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="300" left="5790" top="1320" type="Box" width="1050">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="/cabeza">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input">
+   </LINK>
+   </PATCH>

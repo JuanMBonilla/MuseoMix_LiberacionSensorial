@@ -1,0 +1,71 @@
+#N canvas 241 98 1122 595 10;
+#X declare -lib mrpeach;
+#X obj 34 -56 import mrpeach;
+#X obj 34 -1 unpackOSC;
+#X obj 161 -24 udpsend;
+#X obj 456 93 sendOSC;
+#X obj 414 -62 inlet;
+#X floatatom 381 7 5 0 0 0 - - -;
+#X msg 414 -33 send /metro \$1;
+#X msg 510 44 disconnect localhost 9007;
+#X msg 456 7 connect localhost 9005;
+#X floatatom 34 224 5 0 0 0 - - -;
+#X floatatom 69 224 5 0 0 0 - - -;
+#X floatatom 105 183 5 0 0 0 - - -;
+#X floatatom 140 184 5 0 0 0 - - -;
+#X floatatom 176 117 5 0 0 0 - - -;
+#X floatatom 211 116 5 0 0 0 - - -;
+#X text 175 187 Izquierda;
+#X text 100 229 Derecha;
+#X obj 683 367 dac~ 1 2;
+#X obj 686 281 +~;
+#X obj 687 175 r tec_nota;
+#X obj 710 197 r tec_P;
+#X obj 686 241 wode_classicsynth;
+#X obj 735 218 * 10;
+#X obj 34 -28 udpreceive 12000;
+#X obj 34 27 routeOSC /Dx /Dy /Ix /Iy /Hx /Hy /P1 /P2 /P3;
+#X text 246 119 Cabeza;
+#X floatatom 617 130 5 0 0 0 - - -;
+#X msg 740 29 list melodia 20 21 20 20 20 24 25 22 30;
+#X obj 449 243 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X obj 449 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 464 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 479 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 494 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 509 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 524 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 539 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 554 273 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X connect 0 0 23 0;
+#X connect 1 0 24 0;
+#X connect 4 0 6 0;
+#X connect 4 0 5 0;
+#X connect 6 0 3 0;
+#X connect 7 0 3 0;
+#X connect 8 0 3 0;
+#X connect 18 0 17 0;
+#X connect 18 0 17 1;
+#X connect 19 0 21 0;
+#X connect 20 0 21 1;
+#X connect 20 0 22 0;
+#X connect 21 0 18 0;
+#X connect 22 0 21 2;
+#X connect 23 0 1 0;
+#X connect 24 0 9 0;
+#X connect 24 1 10 0;
+#X connect 24 2 11 0;
+#X connect 24 3 12 0;
+#X connect 24 4 13 0;
+#X connect 24 5 14 0;
+#X connect 26 0 21 0;
+#X connect 27 0 21 0;
